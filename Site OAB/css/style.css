@@ -10,18 +10,6 @@
     background: linear-gradient(to bottom right, #f05a28, #ec008c, #2c3e50);
   }
   
-  header {
-    background: #111;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-  }
-  
-  header .logo img { 
-    height:40px; 
-  }
-  
   nav ul {
     list-style:none;
     display:flex;
@@ -36,8 +24,15 @@
   .topnav {
     color:white;
     text-decoration:none;
-    display: contents;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    word-spacing: 10px;
+  }
+
+  .topnav #logo img{
+    height:40px; 
   }
 
   .topnav a {
@@ -64,8 +59,8 @@
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
+      position: relative;
+      right: 10;
       top: 0;
     }
     .topnav.responsive a {
